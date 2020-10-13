@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task11 {
+public class Task11 {       // Вычислить значения функции на отрезке [а,b] c шагом h:
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите a: ");
@@ -9,10 +9,23 @@ public class Task11 {
         double b = scanner.nextDouble();
         System.out.print("Введите h: ");
         double h = scanner.nextDouble();
-        double x = 0;
+        double x = a;
         double y = 0;
-        if (x == a && x == b && x > 2){
-            y = x;
+        int i = 0;
+        double z = 0;
+        while (x <= b && b != 0){
+            x = a + i * h;
+            if(x > 2 ){
+                y = x;
+                System.out.println(y);
+            }if (x <= 2){
+                y = -x;
+                System.out.println(y);
+            }else {
+
+            }
+            i++;
+
         }
 
         }

@@ -1,4 +1,4 @@
-public class Task13 {
+public class Task13 {           //Составить программу нахождения произведения квадратов первых двухсот чисел.
     public static void main(String[] args) {
         double res = 1;
         for (int i = 1; i <= 200; i++){

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task10 {
+public class Task10 {           //Вычислить значение функции: f(x)
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите число x: ");

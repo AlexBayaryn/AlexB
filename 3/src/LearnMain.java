@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class LearnMain {
-    public static void main(String[] args) {
+    public static void main(String[] args) {     //1. Найдите  значение функции: z = ( (a – 3 ) * b / 2) + c.
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите число a: ");
         double a = scanner.nextDouble();
