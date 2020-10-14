@@ -18,7 +18,7 @@ public class Task8 {   //  Даны три точки А(х1,у1), В(х2,у2) �
         double y3 = scanner.nextDouble();
         double res1 = (y2 - y1) * (x3 - x1);
         double res2 = (y3 - y1) * (x2 - x1);
-        if (res1 == res2){
+        if (res1 == res2) {
             System.out.println("Точки будут расположены на одной прямой");
         } else {
             System.out.println("Точки НЕ расположены на одной прямой ");

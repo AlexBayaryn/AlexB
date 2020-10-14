@@ -13,21 +13,22 @@ public class Task11 {       // Вычислить значения функци�
         double y = 0;
         int i = 0;
         double z = 0;
-        while (x <= b && b != 0){
+        while (x <= b && b != 0) {
             x = a + i * h;
-            if(x > 2 ){
+            if (x > 2) {
                 y = x;
                 System.out.println(y);
-            }if (x <= 2){
+            }
+            if (x <= 2) {
                 y = -x;
                 System.out.println(y);
-            }else {
+            } else {
 
             }
             i++;
 
         }
 
-        }
     }
+}
 

@@ -7,7 +7,7 @@ public class Task16 { //Вывести на экран соответствий 
         char ch = (char) scanner.nextByte();
         if (ch > 31 && ch < 127) {
             System.out.print(ch);
-        }else{
+        } else {
             System.out.print("Error!!!");
         }
     }

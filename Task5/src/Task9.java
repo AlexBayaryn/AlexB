@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Task9 {        // Заданы размеры А, В прямоугольного отверстия и размеры х, у, z кирпича.
-                            // Определить, пройдет ли кирпич через отверстие.
+                        // Определить, пройдет ли кирпич через отверстие.
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите a: ");
@@ -14,15 +14,15 @@ public class Task9 {        // Заданы размеры А, В прямоуг
         int y = scanner.nextInt();
         System.out.print("Введите z: ");
         int z = scanner.nextInt();
-        if (a >= x && b >= y || a >= y && b >= x){
+        if (a >= x && b >= y || a >= y && b >= x) {
             System.out.println("Кирпич проходит !!!");
         }
         if (a >= x && b >= z || a >= z && b >= x) {
             System.out.println("Кирпич тоже пройдет.");
         }
-        if (a >= y && b >= z || a >= z && b >= y){
+        if (a >= y && b >= z || a >= z && b >= y) {
             System.out.println("Кирпич опять пройдет.");
-        }else{
+        } else {
             System.out.println("А вот теперь не пройдет. ");
         }
 
