@@ -4,8 +4,8 @@ public class Task16 { //Вывести на экран соответствий 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите число: ");
-        char ch = (char) scanner.nextByte();
-        if (ch > 31 && ch < 127) {
+        byte ch = (byte) scanner.next().charAt(0);
+        if (ch >=0 && ch < 127) {
             System.out.print(ch);
         } else {
             System.out.print("Error!!!");

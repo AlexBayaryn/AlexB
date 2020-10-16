@@ -9,10 +9,12 @@ public class Task2 {  //  2. Вычислить значение выражен�
         double b = scanner.nextDouble();
         System.out.print("Введите число c: ");
         double c = scanner.nextDouble();
-        System.out.format("%.3f", function(a, b, c));
+        System.out.format("%.3f", function1(a, b, c) + 5);
     }
 
-    public static double function(double a, double b, double c) {
+    public static double function1(double a, double b, double c) {
+
         return ((b + Math.sqrt(Math.pow(b, 2) + 4 * a * c))) / 2 * a - Math.pow(a, 3) * c + Math.pow(b, -2);
+
     }
 }
