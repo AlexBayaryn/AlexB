@@ -9,10 +9,10 @@ public class Task1 {   //1. Найдите  значение функции: z =
         double b = scanner.nextDouble();
         System.out.print("Введите число c: ");
         double c = scanner.nextDouble();
-        System.out.format("%.3f", function(a, b, c));
+        System.out.format("%.3f", result(a, b, c));
     }
 
-    public static double function(double a, double b, double c) {
+    public static double result(Double a, double b, double c) {
         return ((a - 3) * b / 2) + c;
     }
 }
