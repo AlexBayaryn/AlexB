@@ -1,16 +1,17 @@
 package arraysOfArrays;
 
-//    2. Дана квадратная матрица. Вывести на экран элементы, стоящие на диагонали.
-public class MatrixElementsDiagonally {
+//  10. Найти положительные элементы главной диагонали квадратной матрицы.
+public class PositiveDiagonally {
     public static void main(String[] args) {
         int[][] array = {
-                {9, 8, 7},
-                {6, 5, 4},
-                {3, 2, 1}
+                {1, 2, 3, 4},
+                {5, 6, 7, 8},
+                {9, 10, -4, 12},
+                {13, 14, 15, 17}
         };
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
-                if (i == j) {
+                if (i == j && array[i][j] > 0) {
                     System.out.print(array[i][j]);
                 } else {
                     System.out.print(" ");
@@ -20,3 +21,4 @@ public class MatrixElementsDiagonally {
         }
     }
 }
+

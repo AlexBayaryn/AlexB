@@ -13,9 +13,9 @@ public class SwapColumn {
                 {9, 10, 11, 12}
         };
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter namber column №1: ");
+        System.out.print("Enter number column №1: ");
         int column1 = scanner.nextInt();
-        System.out.print("Enter namber column №2: ");
+        System.out.print("Enter number column №2: ");
         int column2 = scanner.nextInt();
         int temp;
         for (int i = 0; i < array.length; i++) {
