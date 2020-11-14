@@ -1,8 +1,9 @@
 package oneDimensionalArray;
 
 import java.util.Scanner;
-        //3. Дан массив действительных чисел, размер которого N.
-         // Подсчитать, сколько в нем отрицательных, положительных и нулевых значений.
+
+//      3. Дан массив действительных чисел, размер которого N.
+//       Подсчитать, сколько в нем отрицательных, положительных и нулевых значений.
 public class RealNumberArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

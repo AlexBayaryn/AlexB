@@ -2,7 +2,7 @@ package oneDimensionalArray;
 
 import java.util.Arrays;
 
-//4. Даны действительные числа а1 ,а2 ,..., аn . Поменять местами наибольший и наименьший элементы.
+//  4. Даны действительные числа а1 ,а2 ,..., аn . Поменять местами наибольший и наименьший элементы.
 public class ReplacementMinOnMax {
     public static void main(String[] args) {
         int[] array = {2, -7, 4, -6, 10, 7, 3, 12, 1};

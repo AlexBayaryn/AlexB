@@ -1,7 +1,8 @@
 package oneDimensionalArray;
 
 import java.util.Scanner;
-    //1. В массив A [N] занесены натуральные числа. Найти сумму тех элементов, которые кратны данному К.
+
+//      1. В массив A [N] занесены натуральные числа. Найти сумму тех элементов, которые кратны данному К.
 public class SumElementArrayMultiplesK {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
