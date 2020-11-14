@@ -1,6 +1,6 @@
 package arraysOfArrays;
 
-//  10. Найти положительные элементы главной диагонали квадратной матрицы.
+//   10. Найти положительные элементы главной диагонали квадратной матрицы.
 public class PositiveDiagonally {
     public static void main(String[] args) {
         int[][] array = {

@@ -1,6 +1,6 @@
 package arraysOfArrays;
 
-//  12. Отсортировать строки матрицы по возрастанию и убыванию значений элементов.
+//   12. Отсортировать строки матрицы по возрастанию и убыванию значений элементов.
 public class SortingStringsMatrix {
     public static void main(String[] args) {
         int[][] array = {

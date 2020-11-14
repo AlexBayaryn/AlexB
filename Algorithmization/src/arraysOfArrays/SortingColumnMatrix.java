@@ -1,5 +1,5 @@
 package arraysOfArrays;
-//  13. Отсотрировать стобцы матрицы по возрастанию и убыванию значений эементов.
+//   13. Отсотрировать стобцы матрицы по возрастанию и убыванию значений эементов.
 public class SortingColumnMatrix {
     public static void main(String[] args) {
         int[][] array = {

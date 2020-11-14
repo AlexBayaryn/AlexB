@@ -1,5 +1,5 @@
 package arraysOfArrays;
-//  6. Сформировать квадратную матрицу порядка n по заданному образцу(n - четное):
+//   6. Сформировать квадратную матрицу порядка n по заданному образцу(n - четное):
 public class SquareMatrix6 {
     public static void main(String[] args) {
         int[][] arraySquare = new int[6][6];

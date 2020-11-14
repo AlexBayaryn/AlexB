@@ -1,6 +1,6 @@
 package arraysOfArrays;
 
-//    2. Дана квадратная матрица. Вывести на экран элементы, стоящие на диагонали.
+//   2. Дана квадратная матрица. Вывести на экран элементы, стоящие на диагонали.
 public class MatrixElementsDiagonally {
     public static void main(String[] args) {
         int[][] array = {

@@ -1,6 +1,5 @@
 package arraysOfArrays;
-
-        //3. Дана матрица. Вывести k-ю строку и p-й столбец матрицы.
+//      3. Дана матрица. Вывести k-ю строку и p-й столбец матрицы.
 public class PrintColumnStringMatrix {
     public static void main(String[] args) {
         int[][] array = {
