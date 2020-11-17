@@ -1,4 +1,5 @@
 package arraysOfArrays;
+
 //   13. Отсотрировать стобцы матрицы по возрастанию и убыванию значений эементов.
 public class SortingColumnMatrix {
     public static void main(String[] args) {
@@ -6,7 +7,7 @@ public class SortingColumnMatrix {
                 {41, 9, 21, 6, 58},
                 {8, 2, 32, 52, 12},
                 {34, 4, 61, 3, 11},
-                {22, 7, 1, 56, 99}
+                {22, 7, 1, 56, 99},
         };
         for (int column = 0; column < array[0].length; column++) {
             int temp = 0;

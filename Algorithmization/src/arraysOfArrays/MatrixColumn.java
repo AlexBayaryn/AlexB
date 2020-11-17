@@ -8,8 +8,8 @@ public class MatrixColumn {
                 {6, 5, 4},
                 {3, 2, 1}
         };
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j += 2) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length; j += 2) {
                 if (array[0][j] > array[2][j]) {
                     System.out.print(array[i][j] + "  ");
                 }
