@@ -14,23 +14,23 @@ public class FindTwinNumbers {
         List<String> listTwins = new ArrayList<>();
         int endNumber = startNumber * 2;
         for (int i = startNumber; i <= endNumber - 2; i++) {
-            if (isTwinPrimes(i)) {
+            if (isTwinPrimes(i,i+2)) {
                 listTwins.add("(" + String.valueOf(i) + ", " + String.valueOf(i + 2) + ")");
             }
         }
         return listTwins;
     }
 
-    private boolean isTwinPrimes(int i) {
-        boolean check = false;
-        for (int j = i - 1; j > 1; j--) {
-            if (i % j != 0 && (i + 2) % j != 0) {
-                check = true;
-            } else {
-                check = false;
-                break;
+    private boolean isTwinPrimes(int a,int b) {
+        for (int j = a - 1; j > 1; j--) {
+            if (isDivider(a,j) || isDivider(b,j)) {
+                return false;
             }
         }
-        return check;
+        return true;
+    }
+
+    private boolean isDivider(int dividend, int divider) {
+       return dividend % divider == 0;
     }
 }
