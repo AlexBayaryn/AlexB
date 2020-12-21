@@ -4,7 +4,7 @@ package decompositionUsingMethods.homeTask7;
 public class SummaFactorialOddNumber {
     public static void main(String[] args) {
         Factorial factorial = new Factorial(9);
-        System.out.println("Сумма факториалов = " + factorial.calculatingFactorial());
+        System.out.println("Сумма факториалов = " + factorial.oddFactorialSum());
 
     }
 }

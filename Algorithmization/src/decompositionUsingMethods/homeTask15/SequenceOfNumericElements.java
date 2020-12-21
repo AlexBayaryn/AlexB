@@ -1,19 +1,32 @@
 package decompositionUsingMethods.homeTask15;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SequenceOfNumericElements {
     private int startNumber;
-    private int finishNumber;
+    private int endNumber;
 
-    public SequenceOfNumericElements(int startNumber, int finishNumber) {
+    public SequenceOfNumericElements(int startNumber, int endNumber) {
         this.startNumber = startNumber;
-        this.finishNumber = finishNumber;
+        this.endNumber = endNumber;
     }
 
-    public void computationOfConsecutiveElements() {
-        boolean check = false;
-        for (int i = startNumber; i <= finishNumber; i++) {
-            int temp = finishNumber;
-            for (int j = i; j > 0; j /= 10) {
+    public List<Integer> listOfSequentialElements() {
+        List<Integer> numberSequentialElements = new ArrayList<>();
+        for (int countNumber = startNumber; countNumber < endNumber; countNumber++) {
+            if (isConsecutive(countNumber)) {
+                numberSequentialElements.add(countNumber);
+            }
+        }
+        return numberSequentialElements;
+    }
+
+    private boolean isConsecutive(int countNumber) {
+        if (countNumber <= endNumber) {
+            boolean check = false;
+            int temp = endNumber;
+            for (int j = countNumber; j > 0; j /= 10) {
                 if (temp > j % 10) {
                     temp = j % 10;
                     check = true;
@@ -22,9 +35,10 @@ public class SequenceOfNumericElements {
                     break;
                 }
             }
-            if (check == true) {
-                System.out.println(i);
+            if (check) {
+                return true;
             }
         }
+        return false;
     }
 }

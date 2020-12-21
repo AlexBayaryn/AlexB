@@ -2,24 +2,23 @@ package decompositionUsingMethods.homeTask10;
 
 import java.util.Arrays;
 
-public class ArrayFormation {
+public class FormedArray {
     int number;
-    int arraySize;
     int[] array;
 
-    public ArrayFormation(int number) {
+    public FormedArray(int number) {
         this.number = number;
-        this.getSizeOfArray();
-        this.fillArray();
+        this.fillArray(getSizeOfArray());
     }
 
-    private void getSizeOfArray() {
+    private int  getSizeOfArray() {
+        int arraySize=0;
         for (int i = number; i > 0; i /= 10) {
             arraySize++;
-        }
+        }return arraySize;
     }
 
-    private void fillArray() {
+    private void fillArray(int arraySize) {
         array = new int[arraySize];
         int arrayIndex = array.length - 1;
         for (int j = number; j > 0; j /= 10) {

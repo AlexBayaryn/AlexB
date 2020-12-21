@@ -2,12 +2,12 @@ package decompositionUsingMethods.homeTask16;
 
 import java.util.Arrays;
 
-public class SearchOddNumber {
+public class EvenOddArray {
     private int quantitySign;
     private int[] array;
 
 
-    public SearchOddNumber(int quantitySign) {
+    public EvenOddArray(int quantitySign) {
         this.quantitySign = quantitySign;
         fillingArray();
     }
@@ -19,31 +19,20 @@ public class SearchOddNumber {
         }
     }
 
-    @Override
-    public String toString() {
-        return "Массив случайных чисел " + Arrays.toString(array);
-    }
-
     private int randomNumber() {
         return (int) (Math.random() * (900 - 100) + 100);
 
     }
 
-    public int sumOddNumber() {
-        boolean check = false;
+    @Override
+    public String toString() {
+        return "Массив случайных чисел " + Arrays.toString(array);
+    }
+
+    public int sumNumberWithOddDigits() {
         int sum = 0;
         for (int j = 0; j < array.length; j++) {
-            int temp;
-            for (int x = array[j]; x > 0; x /= 10) {
-                temp = x % 10;
-                if (temp % 2 != 0 || temp == 0) {
-                    check = true;
-                } else {
-                    check = false;
-                    break;
-                }
-            }
-            if (check == true) {
+            if (isAllDigitsOdd(array[j]) == true) {
                 sum = sum + array[j];
             }
         }
@@ -52,12 +41,22 @@ public class SearchOddNumber {
 
     public int quantityEvenElements() {
         int counter = 0;
-        for (int g = sumOddNumber(); g > 0; g /= 10) {
-            int temp2 = g % 10;
-            if (temp2 % 2 == 0 && temp2 != 0) {
+        for (int g = sumNumberWithOddDigits(); g > 0; g /= 10) {
+            int evenElement = g % 10;
+            if (evenElement % 2 == 0 && evenElement != 0) {
                 counter++;
             }
         }
         return counter;
+    }
+
+    private boolean isAllDigitsOdd(int number) {
+        int temp;
+        for (int x = number; x > 0; x /= 10) {
+            temp = x % 10;
+            if (temp % 2 == 0) {
+                return false;
+            }
+        }return true;
     }
 }

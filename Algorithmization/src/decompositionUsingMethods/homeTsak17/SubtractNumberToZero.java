@@ -10,13 +10,17 @@ public class SubtractNumberToZero {
     public int subtractingSumOfElements() {
         int counter = 0;
         while (number > 0) {
-            int sumElements = 0;
-            for (int i = number; i > 0; i /= 10) {
-                sumElements += i % 10;
-            }
             counter++;
-            number -= sumElements;
+            number -= sumElements(number);
         }
         return counter;
+    }
+
+    private int sumElements(int number) {
+        int sumElements = 0;
+        for (int i = number; i > 0; i /= 10) {
+            sumElements += i % 10;
+        }
+        return sumElements;
     }
 }

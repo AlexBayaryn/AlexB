@@ -5,10 +5,10 @@ package decompositionUsingMethods.homeTask16;
 //     Определить также, сколько четных цифр в найденной сумме. Для решения задачи использовать декомпозицию.
 public class SumNumber {
     public static void main(String[] args) {
-        SearchOddNumber searchOddNumber = new SearchOddNumber(15);
-        System.out.println(searchOddNumber);
-        System.out.println("Сумма чисел = " + searchOddNumber.sumOddNumber() + "\n"
-                + "Количество четных цифр = " + searchOddNumber.quantityEvenElements());
+        EvenOddArray evenOddArray = new EvenOddArray(15);
+        System.out.println(evenOddArray);
+        System.out.println("Сумма чисел = " + evenOddArray.sumNumberWithOddDigits() + "\n"
+                + "Количество четных цифр = " + evenOddArray.quantityEvenElements());
 
     }
 }

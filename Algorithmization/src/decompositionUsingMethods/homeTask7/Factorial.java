@@ -2,25 +2,26 @@ package decompositionUsingMethods.homeTask7;
 
 public class Factorial {
     private int number;
-    private int summaFactorials;
+    private int sumFactorials;
 
     public Factorial(int number) {
         this.number = number;
     }
 
-    public int calculatingFactorial() {
-        if (number % 2 != 0) {
-            for (int i = number; i > 0; i -= 2) {
-                int factorialOddNumber = 1;
-                for (int j = 2; j <= i; j++) {
-                    factorialOddNumber *= j;
-                }
-                summaFactorials += factorialOddNumber;
-            }
-            return summaFactorials;
-        } else {
-            return -1;
+    public int oddFactorialSum() {
+        int numberNew=number % 2 == 0?number-1:number;
+        for (int i = numberNew; i > 0; i -= 2) {
+            sumFactorials += factorial(i);
         }
+        return sumFactorials;
+    }
+
+    public int factorial(int currentNumber) {
+        int factorialOddNumber = 1;
+        for (int j = 2; j <= currentNumber; j++) {
+            factorialOddNumber *= j;
+        }
+        return factorialOddNumber;
     }
 }
 

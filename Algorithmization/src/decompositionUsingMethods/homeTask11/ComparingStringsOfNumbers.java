@@ -1,18 +1,18 @@
 package decompositionUsingMethods.homeTask11;
 
 public class ComparingStringsOfNumbers {
-    String stringOfNumbers1;
-    String stringOfNumbers2;
+    long number1;
+    long number2;
 
-    public ComparingStringsOfNumbers(String stringOfNumbers1, String stringOfNumbers2) {
-        this.stringOfNumbers1 = stringOfNumbers1;
-        this.stringOfNumbers2 = stringOfNumbers2;
+    public ComparingStringsOfNumbers(long number1, long number2) {
+        this.number1 = number1;
+        this.number2 = number2;
     }
 
     public String numberLengthComparison() {
-        if (stringOfNumbers1.length() > stringOfNumbers2.length()) {
-            return "Число " + stringOfNumbers1 + " Больше чем число " + stringOfNumbers2;
+        if (String.valueOf(number1).length() > String.valueOf(number2).length()) {
+            return "Число " + number1 + " Больше чем число " + number2;
         }
-        return "Число " + stringOfNumbers2 + " Больше чем число " + stringOfNumbers1;
+        return "Число " + number2 + " Больше чем число " + number1;
     }
 }
