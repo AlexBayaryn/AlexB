@@ -6,13 +6,13 @@ import java.util.regex.Pattern;
 //     Случай, когда самых длинных слов может быть несколько, не обрабатывать.
 public class SearchForLongestWord {
     public static void main(String[] args) {
-        String string = " Find the longest word and it on the screen .".strip();
+        String string = " Find the longest word and it on the scrkeen .".strip();
         String word = "";
         Pattern pattern = Pattern.compile("\\s|\\p{Punct}");
         String[] strings = pattern.split(string);
         for (int i = 0; i < strings.length; i++) {
             if (word.length() == strings[i].length()) {
-                word = null;
+                word = "";
                 System.out.println("Присутствует более одного самого длинного слова! Программа остановлена!");
                 break;
             }
@@ -20,6 +20,8 @@ public class SearchForLongestWord {
                 word = strings[i];
             }
         }
-        System.out.println("Самое длинное слово: " + word + "\n" + "количество символов: " + word.length());
+        if (word.length() > 0) {
+            System.out.println("Самое длинное слово: " + word + "\n" + "количество символов: " + word.length());
+        }
     }
 }

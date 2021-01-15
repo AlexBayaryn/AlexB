@@ -10,10 +10,10 @@ public class CountSentencesInLine {
         String string = "Line X contains several sentences!!! Each of which ends with a dot." +
                 "Exclamation mark or question mark? Determine the number of sentences in line X!";
         int countSentences = 0;
-        Pattern pattern = Pattern.compile("\\w+\\.+|\\w+\\?+|\\w+\\!+");
+        Pattern pattern = Pattern.compile("(\\w+\\s*){1,}(\\.|\\?|\\!)*");
         Matcher matcher = pattern.matcher(string);
         while (matcher.find()) {
-            matcher.group();
+            System.out.println( matcher.group());
             countSentences++;
         }
         System.out.println("Колличество предложений в строке: " + countSentences);
