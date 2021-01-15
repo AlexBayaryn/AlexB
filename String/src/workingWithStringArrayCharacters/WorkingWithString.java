@@ -3,6 +3,7 @@ package workingWithStringArrayCharacters;
 import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 //  1. Дан массив названий переменных в camelCase. Преобразовать названия в snake_case.
 public class WorkingWithString {
     public static void main(String[] args) {
