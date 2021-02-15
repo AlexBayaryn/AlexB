@@ -11,7 +11,7 @@ public class AddCharacterToString {
         Matcher matcher = pattern.matcher(string);
         StringBuilder stringBuilder = new StringBuilder();
         while (matcher.find()) {
-            matcher.appendReplacement(stringBuilder, "$0b");
+            matcher.appendReplacement(stringBuilder, "$1b");
         }
         matcher.appendTail(stringBuilder);
         System.out.println(stringBuilder.toString());
